@@ -4,6 +4,7 @@ from selenium import webdriver
 #启动浏览器驱动
 def browser():
     driver = webdriver.Firefox()
+    print("test driver")
 
     '''
     #可以启动远程主讲中，运行自动化测试
@@ -15,6 +16,6 @@ def browser():
 
     return driver
 
-#用于测试该脚本是否有效
-if __name__ == '__main__':
-    dr = browser()
+# #用于测试该脚本是否有效
+# if __name__ == '__main__':
+#     dr = browser()

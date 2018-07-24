@@ -5,7 +5,7 @@ from time import sleep
 import unittest
 #基本层
 class Base(object):
-    def __init__(self, driver, base_url = "http://172.16.12.223"):
+    def __init__(self, driver, base_url = "http://172.16.12.223/b/login"):
         self.driver = driver
         self.base_url = base_url
         self.timeout = 30
@@ -23,7 +23,7 @@ class Base(object):
 
     #*参数个数是不是固定的（By.ID, "kw"）
     def find_element(self,*loc):
-        return self.drivr.find_element(*loc)
+        return self.driver.find_element(*loc)
 
     def iframe(self,iframeid):
         return self.driver.switch_to.frame(iframeid)

@@ -1,8 +1,7 @@
 #coding:utf-8
-from time import sleep
 
 import unittest
-from paperless_project.driver.driver import browser
+from paperless_project.mail.test_case.driver.driver import browser
 
 class MyTest(unittest.TestCase):
 
@@ -11,5 +10,5 @@ class MyTest(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
-    def tearDown(self):
-        self.driver.quit()
+    # def tearDown(self):
+    #     self.driver.quit()

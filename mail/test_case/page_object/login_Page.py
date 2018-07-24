@@ -14,10 +14,11 @@ class LoginPage(Base):
 
     #把每一个元素封装成一个方法：
     def login_username(self,text):
-        self.find_element(*self.login_username_text_loc).send_key(text)
+        print("1111")
+        self.find_element(*self.login_username_text_loc).send_keys(text)
 
     def login_password(self,text):
-        self.find_element(*self.login_password_text_loc).send_key(text)
+        self.find_element(*self.login_password_text_loc).send_keys(text)
 
     def login_button(self):
         self.find_element(*self.login_button_loc).click()
