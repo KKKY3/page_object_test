@@ -10,11 +10,10 @@ class LoginPage(Base):
     login_username_text_loc = (By.NAME, "account")
     login_password_text_loc = (By.NAME,"password")
     login_button_loc = (By.ID, "login")
-    login_erro_hint_loc = (By.CLASS_NAME, "mind_top fl")
+    login_erro_hint_loc = (By.CLASS_NAME, "mind_top")
 
     #把每一个元素封装成一个方法：
     def login_username(self,text):
-        print("1111")
         self.find_element(*self.login_username_text_loc).send_keys(text)
 
     def login_password(self,text):

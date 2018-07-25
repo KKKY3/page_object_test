@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-07-24 19:24:25</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:15.552000</p>
-<p class='attribute'><strong>Status:</strong> Failure 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-07-25 17:19:18</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:13.958000</p>
+<p class='attribute'><strong>Status:</strong> Pass 3 Failure 1</p>
 
 <p class='description'>运行环境: window 7, Firefore</p>
 </div>
@@ -223,36 +223,113 @@ function showOutput(id, name) {
 
 <tr class='failClass'>
     <td>login_case.LoginTest</td>
+    <td>4</td>
+    <td>3</td>
     <td>1</td>
     <td>0</td>
-    <td>1</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>test_login_success: 用户名，密码正确，登录成功</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_pwd_null: 密码为空登录</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        fail</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: test driver
-1111
-1111
-2222
+pt1.1: 1111
+请输入密码！
+F:/Workspace/selenium/paperless_project/mail/image/20180725171933pwd_null.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_success: 用户名，密码正确，登录成功</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 1111
+F:/Workspace/selenium/paperless_project/mail/image/20180725171952success.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_user_pwd_error: 用户名或者密码错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: 1111
+F:/Workspace/selenium/paperless_project/mail/image/20180725172014user_pwd_error.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_login_user_pwd_null: 用户名，密码为空登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        fail</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: 1111
+请输入帐号！
 Traceback (most recent call last):
-  File "F:\Workspace\selenium\paperless_project\mail\test_case\login_case.py", line 58, in test_login_success
-    self.assertEqual(po2.login_success_user(),user+"@163.com")
-AssertionError: u'\u7ba1\u7406\u5458' != 'admin@163.com'
+  File "F:\Workspace\selenium\paperless_project\mail\test_case\login_case.py", line 21, in test_login_user_pwd_null
+    self.assertEqual(po.login_error_hint(),"å¸å·ä¸å­å¨!")
+AssertionError: u'\u8bf7\u8f93\u5165\u5e10\u53f7\uff01' != '\xe5\xb8\x90\xe5\x8f\xb7\xe4\xb8\x8d\xe5\xad\x98\xe5\x9c\xa8!'
 
 
         </pre>
@@ -264,8 +341,8 @@ AssertionError: u'\u7ba1\u7406\u5458' != 'admin@163.com'
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
-    <td>0</td>
+    <td>4</td>
+    <td>3</td>
     <td>1</td>
     <td>0</td>
     <td>&nbsp;</td>

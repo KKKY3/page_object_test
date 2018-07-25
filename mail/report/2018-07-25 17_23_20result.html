@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试报告</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-07-24 19:34:24</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:15.171000</p>
-<p class='attribute'><strong>Status:</strong> Pass 1</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-07-25 17:23:20</p>
+<p class='attribute'><strong>Duration:</strong> 0:01:01</p>
+<p class='attribute'><strong>Status:</strong> Pass 4</p>
 
 <p class='description'>运行环境: window 7, Firefore</p>
 </div>
@@ -223,15 +223,15 @@ function showOutput(id, name) {
 
 <tr class='passClass'>
     <td>login_case.LoginTest</td>
-    <td>1</td>
-    <td>1</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1',4)">Detail</a></td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_login_success: 用户名，密码正确，登录成功</div></td>
+    <td class='none'><div class='testcase'>test_login_pwd_null: 密码为空登录</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -245,12 +245,88 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-pt1.1: test driver
-1111
-1111
-2222
-ccc
-F:/Workspace/selenium/paperless_project/mail/report/image/20180724193439success.jpg
+pt1.1: 1111
+请输入密码！
+F:/Workspace/selenium/paperless_project/mail/image/20180725172335pwd_null.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_success: 用户名，密码正确，登录成功</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        pass</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: 1111
+F:/Workspace/selenium/paperless_project/mail/image/20180725172354success.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_user_pwd_error: 用户名或者密码错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: 1111
+F:/Workspace/selenium/paperless_project/mail/image/20180725172407user_pwd_error.jpg
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login_user_pwd_null: 用户名，密码为空登录</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        pass</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: 1111
+请输入帐号！
+F:/Workspace/selenium/paperless_project/mail/image/20180725172420user_pwd_null.jpg
 
 
         </pre>
@@ -262,8 +338,8 @@ F:/Workspace/selenium/paperless_project/mail/report/image/20180724193439success.
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
-    <td>1</td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>

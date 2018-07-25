@@ -30,7 +30,6 @@ def send_mail(file_new):
 #查找测试报告目录，找到最新生成的测试报告文件
 def new_report(testreport):
     lists = os.listdir(testreport)
-    print(lists)
     lists.sort(key = lambda fn : os.path.getmtime(testreport+ "\\" + fn))
     file_new = os.path.join(testreport, lists[-1])
     #print(file_new)
@@ -41,7 +40,7 @@ def new_report(testreport):
 test_dir = r'F:\Workspace\selenium\paperless_project\mail\test_case'
 #print(test_dir)
 testreport = r'F:\Workspace\selenium\paperless_project\mail\report'
-print("111")
+
 discover = unittest.defaultTestLoader.discover(test_dir, pattern="*_case.py")
 
 if __name__ == '__main__':
@@ -53,7 +52,6 @@ if __name__ == '__main__':
                             description=u"运行环境: window 7, Firefore")
 
     runner.run(discover)
-    print("2222")
     fp.close()
 
     new_report = new_report(testreport)

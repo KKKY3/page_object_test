@@ -4,7 +4,6 @@ from selenium import webdriver
 #启动浏览器驱动
 def browser():
     driver = webdriver.Firefox()
-    print("test driver")
 
     '''
     #可以启动远程主讲中，运行自动化测试

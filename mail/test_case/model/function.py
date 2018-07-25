@@ -13,7 +13,7 @@ def insert_img(driver, file_name):
     base = base_dir.split('/mail')[0]
     #print(base)
     now_time = time.strftime("%Y%m%d%H%M%S", time.localtime())
-    file_path = base + '/mail/report/image/'+ now_time + file_name
+    file_path = base + '/mail/image/'+ now_time + file_name
     print(file_path)
     #print(now_time)
     driver.get_screenshot_as_file(file_path)
