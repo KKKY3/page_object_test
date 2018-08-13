@@ -3,7 +3,7 @@
 from time import sleep
 import unittest,random,sys
 from model import  myunit,function
-from page_object.paperless_home_page import Paper_loginpage
+from page_object.paperless_menu_page import Paperless_menu_page
 from page_object.login_Page import LoginPage
 sys.path.append('./model')
 sys.path.append('./page_obj')
@@ -40,7 +40,7 @@ class LoginTest(myunit.MyTest):
         username = "test" + charactor
         po.login_action(username,"2222")
         sleep(2)
-        #print(po.login_error_hint())
+        print(po.login_error_hint())
         self.assertEqual(po.login_error_hint(),"帐号不存在!")
         function.insert_img(self.driver, "user_pwd_error.jpg")
 
@@ -53,7 +53,7 @@ class LoginTest(myunit.MyTest):
         user = "admin"
         po.login_action(user, "admin")
         sleep(2)
-        po2 = Paper_loginpage(self.driver)
-        #print(po2.login_success_user())
+        po2 = Paperless_menu_page(self.driver)
+        print(po2.login_success_user())
         self.assertEqual(po2.login_success_user(),"管理员")
         function.insert_img(self.driver, "success.jpg")

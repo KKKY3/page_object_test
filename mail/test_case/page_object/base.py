@@ -25,6 +25,9 @@ class Base(object):
     def find_element(self,*loc):
         return self.driver.find_element(*loc)
 
+    def find_elements(self,*loc):
+        return self.driver.find_elements(*loc)
+
     def iframe(self,iframeid):
         return self.driver.switch_to.frame(iframeid)
 
